@@ -63,7 +63,8 @@ exports.showJobs = function(req, res)  {
 
 
 exports.createJobs = async function(req,res) {
-    var post_data = req.body;
+    try {
+        var post_data = req.body;
     console.log(post_data);
     console.log("creating jobs");
 
@@ -91,6 +92,14 @@ exports.createJobs = async function(req,res) {
         
         res.redirect('/jobList');
     })
+
+    } catch (error) {
+        //return res.status(404).json("invalid address");
+        res.render('create_job', {
+            errormsg: "error"
+        });
+    }
+    
 
 };
 

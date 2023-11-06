@@ -47,7 +47,7 @@
                                 </h4>
         
                                 <div class="bo4 of-hidden size15 m-b-20">
-                                    <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="title" placeholder="Full Title">
+                                    <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="title" placeholder="Full Title" required>
                                 </div>
 
                                 <div class="flex-w">
@@ -70,6 +70,16 @@
                                 <div class="bo4 of-hidden size15 m-b-20">
                                     <input class="sizefull s-text7 p-l-22 p-r-22" id="ship-address" type="text" name="locName" placeholder="Adress Location">
                                 </div>
+
+                               
+                          
+                                  
+
+                                  <% if (errormsg == "error") { %>
+                                <h4 style="text-align:center; color:red;" class="m-text26 p-b-36 p-t-15">
+                                  Please enter a valid address
+                              </h4>
+                              <% } %>
 
 
         

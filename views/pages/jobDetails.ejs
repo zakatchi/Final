@@ -1240,6 +1240,10 @@
 			};
 			const autocomplete = new google.maps.places.Autocomplete(
 				destinationModalEl.destinationInput, autocompleteOptions);
+
+				autocomplete.setComponentRestrictions({
+  country: ["SG"],
+});
 			let destinationToAdd;
 			autocomplete.addListener('place_changed', () => {
 			  const place = autocomplete.getPlace();
@@ -1950,7 +1954,7 @@
 			new Commutes(CONFIGURATION);
 		  }
 		</script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsLQsmCxwysfq9M9mxdBDm12og5Y7DviE&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_commutes_v2_c" async defer></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsLQsmCxwysfq9M9mxdBDm12og5Y7DviE&region=JP&&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_commutes_v2_c" async defer></script>
 	
 
 
