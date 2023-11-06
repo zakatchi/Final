@@ -63,12 +63,12 @@
                                 </div>
                                 
 
-                                <textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="desc" placeholder="Job Description"></textarea>
+                                <textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="desc" placeholder="Job Description" required></textarea>
 
 
 
                                 <div class="bo4 of-hidden size15 m-b-20">
-                                    <input class="sizefull s-text7 p-l-22 p-r-22" id="ship-address" type="text" name="locName" placeholder="Adress Location">
+                                    <input class="sizefull s-text7 p-l-22 p-r-22" id="ship-address" type="text" name="locName" placeholder="Adress Location" required>
                                 </div>
 
                                
@@ -76,9 +76,9 @@
                                   
 
                                   <% if (errormsg == "error") { %>
-                                <h4 style="text-align:center; color:red;" class="m-text26 p-b-36 p-t-15">
+                                <p style="text-align:center; color:red;" class="m-text26 p-b-36 p-t-15">
                                   Please enter a valid address
-                              </h4>
+                                </p>
                               <% } %>
 
 
